@@ -1,0 +1,25 @@
+#unique {
+  color: #7d98c3;
+}
+
+p {
+  color: #c398d3;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #3d5f8c;
+  /*margin: 10px 100px 30px 70px;*/
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  background-color: #a289c3;
+  color: #fff;
+}
