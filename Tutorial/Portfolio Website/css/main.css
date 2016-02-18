@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 
 /**********************************
   GENERAL
 ************************************/
+=======
+/**********************************
+GENERAL
+***********************************/
+>>>>>>> origin/master
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -17,6 +23,7 @@ a {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 img {
   max-width: 100%;
 }
@@ -36,6 +43,13 @@ header {
     padding: 5px 0 0 0;
     width: 100%;
 }
+=======
+
+
+/**********************************
+HEADING
+***********************************/
+>>>>>>> origin/master
 
 #logo {
   text-align: center;
@@ -58,9 +72,15 @@ h2 {
 
 
 
+<<<<<<< HEAD
 /***********************************
   NAVIGATION
 ************************************/
+=======
+/**********************************
+NAVIGATION
+***********************************/
+>>>>>>> origin/master
 
 nav {
   text-align: center;
@@ -68,6 +88,7 @@ nav {
   margin: 20px 0 0;
 }
 
+<<<<<<< HEAD
 nav ul {
   list-style: none;
   margin: 0 10px;
@@ -88,15 +109,26 @@ nav a {
 /***********************************
   FOOTER
 ************************************/
+=======
+
+
+/**********************************
+FOOTER
+***********************************/
+>>>>>>> origin/master
 
 footer {
   font-size: 0.75em;
   text-align: center;
+<<<<<<< HEAD
   clear: both;
+=======
+>>>>>>> origin/master
   padding-top: 50px;
   color: #ccc;
 }
 
+<<<<<<< HEAD
 .social-icon {
   width: 20px;
   height: 20px;
@@ -186,12 +218,31 @@ body {
 }
 
 /* Green header */
+=======
+
+
+/**********************************
+COLORS
+***********************************/
+
+/* site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+/* green header */
+>>>>>>> origin/master
 header {
   background: #6ab47b;
   border-color: #599a68;
 }
 
+<<<<<<< HEAD
 /* nav background on mobile devices */
+=======
+/* nav background on mobile */
+>>>>>>> origin/master
 nav {
   background: #599a68;
 }
@@ -201,9 +252,15 @@ h1, h2 {
   color: #fff;
 }
 
+<<<<<<< HEAD
 /* colored link */
 a {
     color: #6ab47b;
+=======
+/* links */
+a {
+  color: #6ab47b;
+>>>>>>> origin/master
 }
 
 /* nav link */
@@ -213,5 +270,24 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
+<<<<<<< HEAD
 color: #32673f;
 }
+=======
+  color: #32673f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> origin/master
