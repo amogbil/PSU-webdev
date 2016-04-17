@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>slider</title>
+    <style>
+#box1{
+background-color: #ccc;
+width: 400px;
+height:200px;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+                hello world    </div>
+    <button onclick="changeBG('box1','#F0F');">click me</button>
+    <button onclick="changeBG('box1','#0c0');">click me</button>
+    <button onclick="changeBG('box1','#ff0');">click me</button>
+
+    <script type="text/javascript">
+function changeBG(ele,clr){
+  var element = document.getElementById(ele);
+  element.style.transition ="background 1.0s linear 0s";// 0s for delay
+  element.style.background = clr;
+}
+    </script>
+  </body>
+</html>
