@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>slider</title>
+    <style>
+#box1{
+background-color: #ccc;
+width: 400px;
+height:200px;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      sign in
+    </div>
+    <button onclick="fadeOut('box1');">fade out</button>
+    <button onclick="fadeIn('box1');">fade in</button>
+
+    <script type="text/javascript">
+function fadeOut(ele){
+  var element = document.getElementById(ele);
+  element.style.transition ="opacity 1.0s linear 0s";//1.0 to 0.5 to go faster 0s for delay
+  element.style.opacity = 0;
+}
+function fadeIn(ele){
+  var element = document.getElementById(ele);
+  element.style.transition ="opacity 1.0s linear 0s";// 0s for delay
+  element.style.opacity = 1;
+}
+    </script>
+  </body>
+</html>

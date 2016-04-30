@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>slider</title>
+    <style>
+ #box1{
+background-color: #ccc;
+width: 400px;
+height:200px;
+position: absolute;
+top: 50px;
+left: -400px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <form class="" action="index.html" method="post">
+
+
+      <h1>log in</h1>
+      <label for="">user name</label>
+<input type="text" name="name" value=""><br>
+    <label for="">password</label>
+    <input type="password" name="name" value=""><br>
+    <button>submit</button>
+        </form>
+    </div>
+    <button onclick="slideOut('box1');">slide out</button>
+    <button onclick="slideIn('box1');">slide in</button>
+
+    <script type="text/javascript">
+function slideOut(ele){
+  var element = document.getElementById(ele);
+  element.style.transition ='left 1.0s linear 0s';//1.0 to 0.5 to go faster 0s for delay
+  element.style.left = '-400px';
+}
+function slideIn(ele){
+  var element = document.getElementById(ele);
+  element.style.transition ='left 1.0s linear 0s';// 0s for delay
+  element.style.left = '0px';
+}
+    </script>
+  </body>
+</html>

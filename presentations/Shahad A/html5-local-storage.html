@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HTML5 Local Storage</title>
+<style>
+div{
+	border: 2px solid black;
+	background-color: white;
+	width: 40%;
+	margin: 20px auto;
+}
+</style>
+
+<script type="text/javascript">
+
+function setBackground()
+{
+	window.localStorage.bgColor = document.getElementById("color_list").value;
+	document.body.style.backgroundColor = localStorage.bgColor;
+}
+
+function loadBackground()
+{
+
+	if (window.localStorage.bgColor.length ==0)
+		{
+			window.localStorage.bgColor = "white";
+		}
+	else
+		{
+			document.body.style.backgroundColor = window.localStorage.bgColor;
+			document.getElementById("color_list").value = window.localStorage.bgColor;
+		}
+	}
+
+
+	function initialize(){
+  var storagehere=(('localStorage'in window)&&window['localStorage']!==null);
+  if(!storagehere){
+    alert("sorry the browser can't save your information");
+  }else{
+    	document.getElementById("username").value =window.localStorage.getItem("username");
+      document.getElementById("password").value =window.localStorage.getItem("password");
+		  document.getElementById('remember_me').checked =window.localStorage.getItem("remember_me");
+  }
+}
+  window.onload=initialize;
+  function storeData(){
+		if(document.getElementById('remember_me').checked){
+    window.localStorage.setItem("username", document.getElementById("username").value);
+		window.localStorage.setItem("password", document.getElementById("password").value);
+		window.localStorage.setItem("remember_me", document.getElementById('remember_me').checked);
+  }}
+	function clearData(){
+		window.localStorage.removeItem("username");
+			window.localStorage.removeItem("password");
+			window.localStorage.removeItem("remember_me");
+
+	}
+	function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s).";
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+function clickCounterLocal() {
+	if(typeof(Storage) !== "undefined") {
+			if (localStorage.clickcount) {
+					localStorage.clickcount = Number(localStorage.clickcount)+1;
+			} else {
+					localStorage.clickcount = 1;
+			}
+			document.getElementById("resultlocal").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+	} else {
+			document.getElementById("resultlocal").innerHTML = "Sorry, your browser does not support web storage...";
+	}
+}
+</script>
+
+</head>
+
+<body onLoad="javascript:loadBackground();">
+<div>
+<select id="color_list">
+
+<option value="white">White</option>
+<option value="gray">Gray</option>
+<option value="orange">Orange</option>
+<option value="purple">Purple</option>
+
+</select>
+
+<input type="button" value="Set Background Color" onClick="javascript:setBackground();"/>
+</div>
+<div>
+<table>
+	<tr>
+		<td>Username</td>
+		<td><input type="text" id="username"></td>
+	</tr>
+	<tr>
+		<td>password</td>
+		<td><input type="password" id="password"></td>
+	</tr>
+	<tr>  <td><label>
+			<input type="checkbox" name="remember_me" id="remember_me">
+			Remember me on this computer
+		</label></td></tr>
+	<tr>
+		<td></td>
+			<td><input type="button" value="login"
+				onClick="javascript:storeData()"/>
+				<input type="button" value="clear"
+				onClick="javascript:clearData()"/></td>
+	</tr>
+</table>
+</div>
+<div>
+<p><button onclick="clickCounter()" type="button">Session Storage!</button></p>
+<div id="result"></div>
+<p><button onclick="clickCounterLocal()" type="button">Local Storage!</button></p>
+<div id="resultlocal"></div>
+</div>
+</body>
+</html>

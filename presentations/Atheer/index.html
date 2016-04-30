@@ -1,0 +1,127 @@
+<!-- Tutorial Video https://www.youtube.com/watch?v=uyT3NSHhke8-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tutorial</title>
+<style type="text/css">
+  *{
+    padding: 0;
+    margin:0;
+  }
+
+  body{
+    font-family: monospace;
+
+  }
+
+  a{
+    text-decoration: none;
+    color: gray;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  header{
+    width:100%;
+    height: 50px;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    background-color: black;
+  }
+
+  #logo{
+    float:left;
+    line-height: 50px;
+    color: lightgray;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav{
+    width:100%;
+    text-align: center;
+  }
+
+  nav a{
+    display: block;
+    padding: 11px 0;
+    border-bottom: 1px solid lightgray;
+  }
+  nav a:hover{
+    background-color: lightgray;
+    color:black;
+
+  }
+
+  nav li:last-child a{
+    border-bottom: none;
+  }
+
+/** STEP 1**/
+
+.menu{
+  width:240px;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  /** STEP 6**/
+  left: -240px;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  /** STEP 6**/
+}
+/** STEP 1**/
+
+/** STEP 3**/
+.menuIcon{
+  padding: 10px 20px;
+  background: black;
+  color: lightgray;
+  cursor: pointer;
+  float: right;
+}
+/** STEP 3**/
+
+/** STEP 4**/
+#menuToggle{
+  display: none;
+}
+/** STEP 4**/
+
+/** STEP 5**/
+#menuToggle:checked ~ .menu{
+  position: absolute;
+  left: 0;
+}
+/** STEP 5**/
+
+</style>
+  </head>
+  <body>
+
+<!-- STEP 2 -->
+<input type="checkbox" id="menuToggle" name="menuToggle">
+<label for="menuToggle" class="menuIcon">&#9776</label>
+<!-- STEP 2 -->
+
+    <header>
+      <div id="logo">Sliding Navigation</div>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </body>
+</html>
