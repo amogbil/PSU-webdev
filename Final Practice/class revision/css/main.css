@@ -1,0 +1,143 @@
+/* GENERAL STYLING */
+
+* {
+    margin:0;
+    padding:0;
+    }
+    
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Helvetica', Arial, san-serif;
+    }
+    
+    
+/* HEADER STYLING */
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    }
+    
+nav {
+    margin: 0 auto;
+    text-align: center;
+    }
+    
+ul {
+    list-style: none;
+    }
+    
+li {
+    margin-top: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid #777;
+    }
+    
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Helvetica', Arial, san-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    }
+    
+.selected {
+    background-color:  #666;
+}
+
+
+/* SECTION 1 STYLING */
+#top-section {
+    width: 100%;
+    height: 350px;
+    background-image: url("../img/bg-1.jpg");
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    }
+    
+#top-section h1 {
+    padding-top:120px;
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-shadow: 2px 2px 0 #444;
+    }
+    
+#top-section h3 {
+    padding-top:2px;
+    font-weight: 100;
+    }
+    
+#bottom-section {
+    width: 100%;
+    height: 600px;
+    }
+    
+#wrapper {
+    width: 70%;
+    height: 300px;
+    margin: 30px auto;
+    padding-left: 10%;
+    }
+    
+.inside-div {
+    width: 25%;
+    height: 260px;
+    float: left;
+    margin-left: 20px;
+    background-color: #ccc;
+    }
+    
+.inside-div img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+    }
+    
+.inside-div h4 {
+    font-size: 0.75em;
+    padding-left: 15px;
+    }
+    
+#green {
+    color: green;
+    }
+    
+#blue {
+    color: blue;
+    }
+    
+#red {
+    color: red;
+    }
+    
+.inside-div p {
+    font-size: 0.65em;
+    padding: 5px 15px;
+    }
+    
+.thebutton {
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 35%;
+    padding: 5px 20px;
+    border-width: 0;
+    color: #fff;
+    }
+    
+#red-b {
+    background-color: red;
+    }
+    
+#blue-b {
+    background-color: blue;
+    }
+    
+#green-b {
+    background-color: green;
+    }
